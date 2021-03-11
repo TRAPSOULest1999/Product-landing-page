@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet"type="text/css" href="css/landing_page.css">
+    <style>
+      /* For desktop: */
+      .col-1 {width: 8.33%;}
+      .col-2 {width: 16.66%;}
+      .col-3 {width: 25%;}
+      .col-4 {width: 33.33%;}
+      .col-5 {width: 41.66%;}
+      .col-6 {width: 50%;}
+      .col-7 {width: 58.33%;}
+      .col-8 {width: 66.66%;}
+      .col-9 {width: 75%;}
+      .col-10 {width: 83.33%;}
+      .col-11 {width: 91.66%;}
+      .col-12 {width: 100%;}
+
+      @media only screen and (max-width: 768px) {
+      /* For mobile phones: */
+      [class*="col-"] {
+        width: 100%;
+      }
+      }
+
+      .flex-container {
+      display: flex;
+      justify-content: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header id="header">
+<center><img id="header-img" src="https://cdn.freebiesupply.com/logos/large/2x/samsung-1-logo-svg-vector.svg"></center>
+<center>
+<nav id="nav-bar">
+  <a class="nav-link" href="#features">Features</a>
+  <a class="nav-link" href="#vid">Samsung Galaxy Note20 Ultra</a>
+  <a class="nav-link" href="#price">Buy</a>
+</nav>
+</center>
+    </header>
+
+      <section id="features">
+        <center>
+        <h1><em>Samsung Galaxy Note20|Note20 Ultra</em></h1>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input id="email" type="email" placeholder="i.e.: therock@yahoo.com" name="email"></input>
+          <input id="submit" type="submit"></input>
+        </form>
+        </center>
+      </section>
+
+      <section id="vid">
+        <center>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/DWRcNpR6Kdc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </center>
+      </section>
+
+      <section id="price">
+      <center><h3><em>Buy a Samasung Galaxy Note20|Note20 Ultra:</em></h3></center>
+        <div class="flex-container">
+<a href="https://www.amazon.com/s?k=galaxy+note+20&__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss_2" target="_blank">
+          <div><img id="amazon-img" src="https://pngimg.com/uploads/amazon/amazon_PNG5.png"></div>
+</a>
+<a href="https://www.takealot.com/all?_sb=1&_r=1&_si=c452f3662e295f8b137266bdd8c49e6a&qsearch=galaxy%20note%2020" target="_blank">
+          <div><img id="takealot-img" src="https://www.sodastream.co.za/wp-content/uploads/2019/01/takealot-logo.png"></div>
+</a>
+<a href="https://www.samsung.com/za/smartphones/galaxy-note20/buy/" target="_blank">
+          <div><img id="samsung-img" src="https://cdn.freebiesupply.com/logos/large/2x/samsung-1-logo-svg-vector.svg"></div>
+</a>
+        </div>
+      </section>
+
+  </body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("header");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  console.log('scroll triggered')
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</html>
